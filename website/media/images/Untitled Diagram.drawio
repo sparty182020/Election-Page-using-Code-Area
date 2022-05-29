@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+        <mxGraphModel dx="765" dy="397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#009900;" vertex="1" parent="1">
+                    <mxGeometry x="318.9" y="100" width="100" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font face=&quot;Assistant&quot; style=&quot;font-size: 36px&quot;&gt;I like games&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=30;position=0.83;base=120;position2=0.75;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="40" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.sonico;fillColor=#01AEF0;strokeColor=none;fontSize=36;rotation=15;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="110" width="40" height="33.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.phone;fillColor=#36BE0F;strokeColor=#17292A;fontSize=36;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="130" width="57.800000000000004" height="54.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="shape=mxgraph.signs.tech.radio;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;fontSize=36;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="162" width="59" height="36" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Sparty182020 Website">
+    <meta name="description" content="Sparty182020's Custom Coded Website">
+    <meta name="keywords" content="Sparty182020">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Sparty182020">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="og:title" content="HTML5 Game Page">
+    <meta property="og:description" content="Sparty182020's Custom Coded Website">
+    <meta property="og:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="twitter:title" content="HTML5 Game Page">
+    <meta property="twitter:description" content="Sparty182020's Custom Coded Website">
+    <meta property="twitter:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <!-- CSS -->
+    <link href="../stylesheets/general/defults.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/file-specific/website-gen.css" rel="stylesheet" type="text/css">
+    <!-- JavaScript -->
+    <script src="../scripts/File-Specific/website-gen.js"></script>
+    <script src="../scripts/CoG/websiteGenerators.js"></script>
+    <script defer src="../scripts/Other/testing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Title -->
+    <link rel="icon" href="../media/images/icon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body onload="setup()">
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./userpage.html">Userpage</a></li>
+                <li><a href="./text-converter.html">Text Converter</a></li>
+                <li><a href="./game.html">Game</a></li>
+                <li><a href="./socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </div>
+    <lb></lb>
+    <div id="button-area">
+        <h1>Website Generators</h1>
+        <lb></lb>
+        <icons><a href="javascript:void(genwin(1,600,600))">looks_one</a></icons>
+        <icons><a href="javascript:void(genwin(2,600,600))">looks_two</a></icons>
+        <icons><a href="javascript:void(genwin(3,600,600))">looks_3</a></icons>
+        <icons><a href="javascript:void(genwin(4,600,600))">looks_4</a></icons>
+        <icons><a href="javascript:void(genwin(5,600,600))">looks_5</a></icons>
+        <icons><a href="javascript:void(genwin(6,600,600))">looks_6</a></icons>
+    </div>
+    <lb></lb>
+    <div id="blocker"></div>
+    <div id="login">
+        <label for="psw">Admin Password: </label>
+        <input type="password" id="psw" minlength="4">
+        <p id="pswCheck" style="color:red;" ch ns>
+            <icons3 class="rounded ff">error</icons3> Password Incorrect <icons3 class="rounded ff">error</icons3>
+        </p>
+    </div>
+</body>
+
+</html>

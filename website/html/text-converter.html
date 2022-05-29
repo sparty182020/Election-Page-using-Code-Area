@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="title" content="Sparty182020 Website">
+    <meta name="description" content="Sparty182020's Custom Coded Website">
+    <meta name="keywords" content="Sparty182020">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Sparty182020">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="og:title" content="Text Converter Page">
+    <meta property="og:description" content="Sparty182020's Custom Coded Website">
+    <meta property="og:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="twitter:title" content="Text Converter Page">
+    <meta property="twitter:description" content="Sparty182020's Custom Coded Website">
+    <meta property="twitter:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <title>Text Converter</title>
+    <link rel="icon" href="../media/images/icon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link href="../stylesheets/general/defults.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/file-specific/text-coverter.css" rel="stylesheet" type="text/css">
+    <!-- Script -->
+    <script src="../scripts/CoG/converter.js"></script>
+    <script src="../scripts/CoG/morsecode.js"></script>
+    <script src="../scripts/Other/class.js"></script>
+
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./userpage.html">Userpage</a></li>
+                <li class="selelcted">Text Converter</li>
+                <li><a href="./game.html">Game</a></li>
+                <li><a href="./socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="text">
+        <div class="textarea">
+            <cssr class="textinput">
+                <input type="text" id="sitextinput" name="" maxlength="1" onkeyup="this.value = ''"
+                    placeholder="Enter Letter Here: ">
+            </cssr>
+            <br>
+            <div class="textinfo">
+                <p><strong>Letter: </strong>
+                    <ttag id="siletter"></ttag>
+                </p>
+                <br>
+                <p><strong>charCode: </strong>
+                    <ttag id="sicharCode"></ttag>
+                </p>
+                <br>
+                <p><strong>Binary: </strong>
+                    <ttag id="sibinary"></ttag>
+                </p>
+                <br>
+                <p><strong>Hex: </strong>
+                    <ttag id="sihex"></ttag>
+                </p>
+                <br>
+                <p><strong>Base32: </strong>
+                    <ttag id="sib32"></ttag>
+                </p>
+                <br>
+                <p><strong>Morse Code: </strong>
+                    <ttag id="simorsecode"></ttag>
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="textarea">
+            <cssr class="textinput">
+                <input type="text" id="mitextinput" placeholder="Enter Your text term here: ">
+            </cssr>
+            <br>
+            <div class="textinfo">
+                <p><strong>Binary: </strong>
+                    <ttag id="mibinary"></ttag>
+                </p>
+                <br>
+                <p><strong>Hex: </strong>
+                    <ttag id="mihex"></ttag>
+                </p>
+                <br>
+                <p><strong>Base32: </strong>
+                    <ttag id="mib32"></ttag>
+                </p>
+                <br>
+                <p><strong>Morse Code: </strong>
+                    <ttag id="mimorsecode"></ttag>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Script for the singular inputs-->
+    <script>
+        function sconvert(e) {
+            const textel = document.getElementById("sitextinput")
+            document.getElementById("siletter").innerHTML = `<mark>${e.key}</mark>`
+            document.getElementById("sicharCode").innerHTML = `<mark>${String(e.keyCode)}</mark>`
+            document.getElementById("sibinary").innerHTML = `<mark>${stbi(String(e.keyCode), true)}</mark>`
+            document.getElementById("sihex").innerHTML = `<mark>${sth(String(e.keyCode), true)}</mark>`
+            document.getElementById("sib32").innerHTML = `<mark>${stb32(String(e.keyCode), true)}</mark>`
+            document.getElementById("simorsecode").innerHTML = `<mark>${stmc(String(e.key).toLowerCase(), true)}</mark>`;
+        }
+        document.getElementById("sitextinput").addEventListener('keydown', sconvert)
+    </script>
+    <!-- Script for the Mutiple inputs-->
+    <script>
+        function mconvert(e) {
+            const textel = document.getElementById("mitextinput")
+            document.getElementById("mibinary").innerHTML = `<mark>${stbi(textel.value)}</mark>`
+            document.getElementById("mihex").innerHTML = `<mark>${sth(textel.value)}</mark>`
+            document.getElementById("mib32").innerHTML = `<mark>${stb32(textel.value)}</mark>`
+            document.getElementById("mimorsecode").innerHTML = `<mark>${stmc(textel.value.toLowerCase())}</mark>`;
+        }
+        document.getElementById("mitextinput").addEventListener('keydown', mconvert)
+        document.getElementById("mitextinput").addEventListener('keyup', mconvert)
+    </script>
+</body>
+
+</html>

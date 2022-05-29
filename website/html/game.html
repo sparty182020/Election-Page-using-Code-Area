@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="title" content="Sparty182020 Website">
+    <meta name="description" content="Sparty182020's Custom Coded Website">
+    <meta name="keywords" content="Sparty182020">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Sparty182020">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="og:title" content="HTML5 Game Page">
+    <meta property="og:description" content="Sparty182020's Custom Coded Website">
+    <meta property="og:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sparty182020.github.io/Code-Area/">
+    <meta property="twitter:title" content="HTML5 Game Page">
+    <meta property="twitter:description" content="Sparty182020's Custom Coded Website">
+    <meta property="twitter:image" content="https://i.ibb.co/Gs8BsdF/Screenshot-2022-02-28-5-45-23-PM.png">
+    <link rel="icon" href="../media/images/icon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link href="../stylesheets/general/defults.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/file-specific/game.css" rel="Stylesheet" type="text/css">
+    <!-- Script -->
+    <script defer src="../scripts/File-Specific/game.js"></script>
+    <title>Game Area</title>
+
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./userpage.html">Userpage</a></li>
+                <li><a href="./text-converter.html">Text Converter</a></li>
+                <li class="selelcted">Game</li>
+                <li><a href="./socials.html">Socials</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div id="typing">
+            <h1>
+                Type Here
+                <icons class="md-36">keyboard</icons>
+            </h1>
+            <p class="counter">Keys hit: <span id="type_counter">0</span></p>
+            <p class="xps">Keys per second: <span id="kps">0</span></p>
+            <input id="text_input" type="text" onKeyUp="this.value=''" onKeyPress="x.addKeyHit()" hidden></input>
+        </div>
+        <div id="clicking">
+            <h1>
+                Click Here
+                <icons class="md-36">mouse</icons>
+            </h1>
+            <p class="counter">Clicks: <span id="click_counter">0</span></p>
+            <p class="xps">Clicks per second: <span id="cps">0</span></p>
+            <button onClick="x.addMouseHit()" id="clicker_button" hidden></button>
+        </div>
+    </div>
+</body>
+
+</html>

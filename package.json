@@ -1,0 +1,23 @@
+{
+  "name": "bens-electron-app",
+  "version": "0.1.0",
+  "description": "Benjamin's Electron App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "sparty182020",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-packager": "^15.5.1",
+    "eslint": "^8.15.0"
+  },
+  "dependencies": {
+    "screen-size-detector": "^1.0.4"
+  }
+}
